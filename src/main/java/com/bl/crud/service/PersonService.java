@@ -26,4 +26,8 @@ public class PersonService {
     public void save(Person person) {
         repo.save(person);
     }
+
+    public void delete(Integer id) {
+        repo.deleteById(id);
+    }
 }

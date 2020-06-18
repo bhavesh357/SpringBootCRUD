@@ -47,4 +47,9 @@ public class PersonController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
+
+    @DeleteMapping("/persons/{id}")
+    public void delete(@PathVariable Integer id) {
+        service.delete(id);
+    }
 }
