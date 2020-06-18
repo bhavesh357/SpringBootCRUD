@@ -10,16 +10,16 @@ import javax.persistence.Id;
 public class Person {
     private int id;
     private String name;
-    private String emailId;
+    private String email;
     private String number;
 
     public Person() {
     }
 
-    public Person(int id, String name, String emailId, String number) {
+    public Person(int id, String name, String email, String number) {
         this.id = id;
         this.name = name;
-        this.emailId = emailId;
+        this.email = email;
         this.number = number;
     }
 
@@ -41,12 +41,12 @@ public class Person {
         this.name = name;
     }
 
-    public String getEmailId() {
-        return emailId;
+    public String getEmail() {
+        return email;
     }
 
-    public void setEmailId(String emailId) {
-        this.emailId = emailId;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getNumber() {
