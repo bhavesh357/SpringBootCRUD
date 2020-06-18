@@ -18,4 +18,8 @@ public class PersonService {
     public List<Person> listAll(){
         return repo.findAll();
     }
+
+    public Person get(Integer id) {
+        return repo.findById(id).get();
+    }
 }
