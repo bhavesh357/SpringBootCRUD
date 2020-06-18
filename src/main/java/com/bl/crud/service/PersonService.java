@@ -22,4 +22,8 @@ public class PersonService {
     public Person get(Integer id) {
         return repo.findById(id).get();
     }
+
+    public void save(Person person) {
+        repo.save(person);
+    }
 }
